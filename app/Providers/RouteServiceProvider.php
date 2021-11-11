@@ -61,7 +61,7 @@ class RouteServiceProvider extends ServiceProvider
         });
 
         RateLimiter::for('input', function (Request $request) {
-            return Limit::perMinute(100)->by(optional($request->user())->id ?: $request->ip())
+            return Limit::perMinute(1)->by(optional($request->user())->id ?: $request->ip())
             ->response(function () {
                 return response(json_encode(['kode' => '1062' , 'message' => 'Duplicate Enty Exception']),403 );
             });
