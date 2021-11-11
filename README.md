@@ -11,16 +11,16 @@
 see <a href="https://documenter.getpostman.com/view/11540473/UVC6jSVP" target="_blank">here via POSTMAN Collections</a> 
 
 ## Test-backed-dev
- ``` Setting Up ```
-
- ``` git clone https://github.com/justalinko/test-backend-dev.git ```
- ``` cd test-backend-dev ```
- ``` composer install ```
- ``` php artisan key:generate ```
- ``` php artisan migrate ```
- ``` php artisan passport:install ```
- ``` php artisan serve ```
-
+  Setting Up 
+<pre>
+$ git clone https://github.com/justalinko/test-backend-dev.git 
+$ cd test-backend-dev 
+$ composer install 
+$ php artisan key:generate 
+$ php artisan migrate 
+$ php artisan passport:install 
+$ php artisan serve 
+</pre>
 ## Disclaimer
 
 this is just a test project. all of these projects are development stage no production stage.
