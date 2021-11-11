@@ -15,10 +15,14 @@ see <a href="https://documenter.getpostman.com/view/11540473/UVC6jSVP" target="_
 <pre>
 $ git clone https://github.com/justalinko/test-backend-dev.git 
 $ cd test-backend-dev 
-$ composer install 
+$ composer install
+$ cp .env.example .env
+
+# edit your .env for databases.
+
 $ php artisan key:generate 
-$ php artisan migrate 
-$ php artisan passport:install 
+$ php artisan passport:install
+$ php artisan migrate
 $ php artisan serve 
 </pre>
 ## Disclaimer
